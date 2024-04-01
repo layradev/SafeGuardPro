@@ -1,0 +1,130 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFDBA"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="412dp"
+        android:layout_height="86dp"
+        android:background="#FFEB3B"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="-2dp" />
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="222dp"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:hint="Nome:"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="186dp" />
+
+    <EditText
+        android:id="@+id/btnEmail"
+        android:layout_width="219dp"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:hint="Email:"
+        android:inputType="text"
+        tools:ignore="DuplicateIds"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="245dp" />
+
+    <EditText
+        android:id="@+id/edtCpf"
+        android:layout_width="218dp"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:hint="Cpf:"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="306dp" />
+
+    <EditText
+        android:id="@+id/edtCarteira"
+        android:layout_width="216dp"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:hint="Carteira de trabalho:"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="378dp" />
+
+    <EditText
+        android:id="@+id/edtCargo"
+        android:layout_width="212dp"
+        android:layout_height="43dp"
+        android:layout_alignParentBottom="true"
+        android:hint="Cargo:"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="443dp" />
+
+    <EditText
+        android:id="@+id/edtTelefone"
+        android:layout_width="215dp"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:hint="Telefone:"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="502dp" />
+
+    <Button
+        android:id="@+id/btnCadastro"
+        android:layout_width="126dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#000000"
+        android:text="Cadastrar"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="587dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="223dp"
+        android:layout_height="55dp"
+        android:text="Cadastro Funcionario"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="115dp" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar5"
+        android:layout_width="390dp"
+        android:layout_height="71dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFEB3B"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="739dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="110dp"
+        android:layout_height="112dp"
+        android:src="@drawable/thumbnail_engenharia_logo__3__removebg_preview"
+        tools:layout_editor_absoluteX="-10dp"
+        tools:layout_editor_absoluteY="-10dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="45dp"
+        android:layout_height="52dp"
+        android:src="@drawable/silhueta_de_icone_de_casa"
+        tools:layout_editor_absoluteX="332dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

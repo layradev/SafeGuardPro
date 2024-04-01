@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF9DB"
+    tools:context=".view.ListaFuncionariosFragment">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="484dp"
+        android:layout_height="85dp"
+        android:background="#FFEB3B"
+        tools:layout_editor_absoluteX="-23dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailSubject"
+        android:text="LISTA DE FUNCIONÁRIOS"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="29sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="115dp" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="125dp"
+        android:layout_height="91dp"
+        android:src="@drawable/roberto"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="175dp" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="125dp"
+        android:layout_height="104dp"
+        android:src="@drawable/junior"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="278dp" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="127dp"
+        android:layout_height="126dp"
+        android:src="@drawable/renato"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="395dp" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="128dp"
+        android:layout_height="156dp"
+        android:src="@drawable/adriana"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="521dp" />
+
+    <TextView
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:text="Nome: Paulo Vieira da Silva"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="175dp" />
+
+    <TextView
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:text="Idade:"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="207dp" />
+
+    <TextView
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:text="Cargo:"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="236dp" />
+
+    <TextView
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:text="Nome: Rafael Oliveira"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="291dp" />
+
+    <TextView
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:text="Idade:"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="320dp" />
+
+    <TextView
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:text="Cargo:"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="355dp" />
+
+    <TextView
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:text="Nome: Renato Alessandro Ferreira"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="407dp" />
+
+    <TextView
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:text="Idade:"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="439dp" />
+
+    <TextView
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:text="Cargo:"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="471dp" />
+
+    <TextView
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:text="Nome: Adriana Marques"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="555dp" />
+
+    <TextView
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:text="Idade:"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="584dp" />
+
+    <TextView
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:text="Cargo:"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="614dp" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar5"
+        android:layout_width="415dp"
+        android:layout_height="78dp"
+        android:background="#FFEB3B"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="658dp" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="116dp"
+        android:layout_height="143dp"
+        android:src="@drawable/engenharia_logo__3__removebg_preview"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-28dp" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="58dp"
+        android:layout_height="64dp"
+        android:src="@drawable/silhueta_de_icone_de_casa"
+        tools:layout_editor_absoluteX="337dp"
+        tools:layout_editor_absoluteY="12dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

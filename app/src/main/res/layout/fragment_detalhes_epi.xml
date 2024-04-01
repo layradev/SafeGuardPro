@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF9DB"
+    tools:context=".view.DetalhesEpiFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="484dp"
+        android:layout_height="85dp"
+        android:background="#FFEB3B"
+        tools:layout_editor_absoluteX="-37dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailSubject"
+        android:text="DETALHES"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="108dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="125dp"
+        android:layout_height="177dp"
+        android:src="@drawable/capacete_removebg_preview"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="176dp" />
+
+    <TextView
+        android:layout_width="276dp"
+        android:layout_height="27dp"
+        android:ems="10"
+        android:text="CAPACETE DE SEGURANÇA"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="176dp" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar5"
+        android:layout_width="415dp"
+        android:layout_height="78dp"
+        android:background="#FFEB3B"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="658dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="137dp"
+        android:layout_height="127dp"
+        android:src="@drawable/engenharia_logo__3__removebg_preview"
+        tools:layout_editor_absoluteX="-14dp"
+        tools:layout_editor_absoluteY="-19dp" />
+
+    <TextView
+        android:layout_width="252dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:text="Validade: 5 anos, desde que as condições estejam corretas."
+        android:textSize="15sp"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="216dp" />
+
+    <TextView
+        android:layout_width="244dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:text="Data de validade: recomenda a troca do capacete a cada 3 ou 5 anos, ou com qualquer tipo de dano."
+        android:textSize="15sp"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="274dp" />
+
+    <TextView
+        android:layout_width="296dp"
+        android:layout_height="61dp"
+        android:ems="10"
+        android:text="CA: 8304 - CAPACETE CLASSE A - MSA DO BRASIL EQUIP E INSTRUMENTOS DE SEGURANCA LTDA."
+        android:textSize="15sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="353dp" />
+
+    <TextView
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:ems="10"
+        android:text="DESCRIÇÃO:"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="436dp" />
+
+    <TextView
+        android:layout_width="366dp"
+        android:layout_height="123dp"
+        android:ems="10"
+        android:text="O objetivo do capacete é proteger a cabeça reduzindo os impactos causados em um eventual acidente. Além disso, as viseiras protegem os olhos e o rosto contra impactos da chuva, insetos, poeira e outros detritos."
+        android:textSize="17sp"
+        android:textStyle="normal"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="478dp" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="75dp"
+        android:layout_height="60dp"
+        android:src="@drawable/silhueta_de_icone_de_casa"
+        tools:layout_editor_absoluteX="333dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

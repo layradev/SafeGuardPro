@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF9DB"
+    tools:context=".view.ListaEpiFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="484dp"
+        android:layout_height="85dp"
+        android:background="#FFEB3B" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailSubject"
+        android:text="LISTA"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="-10dp"
+        tools:layout_editor_absoluteY="99dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="128dp"
+        android:layout_height="151dp"
+        android:src="@drawable/engenharia_logo__3__removebg_preview"
+        tools:layout_editor_absoluteX="-10dp"
+        tools:layout_editor_absoluteY="-32dp" />
+
+
+    <TextView
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:ems="10"
+        android:text="CAPACETE DE SEGURANÇA"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="86dp"
+        tools:layout_editor_absoluteY="164dp" />
+
+    <TextView
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:ems="10"
+        android:text="Validade:"
+        android:textStyle="normal"
+        tools:layout_editor_absoluteX="86dp"
+        tools:layout_editor_absoluteY="185dp" />
+
+
+    <TextView
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:ems="10"
+        android:text="Data de validade:"
+        tools:layout_editor_absoluteX="86dp"
+        tools:layout_editor_absoluteY="206dp" />
+
+    <TextView
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:ems="10"
+        android:text="LUVAS DE LATEX"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="284dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="88dp"
+        android:layout_height="107dp"
+        android:src="@drawable/capacete_removebg_preview"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="146dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="91dp"
+        android:layout_height="102dp"
+        android:src="@drawable/_622565084793_1__removebg_preview"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="269dp" />
+
+    <TextView
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:ems="10"
+        android:text="Validade:"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="312dp" />
+
+    <TextView
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:ems="10"
+        android:text="Data de validade:"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="340dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="94dp"
+        android:layout_height="104dp"
+        android:src="@drawable/_672_617849aec2f98_mini_1__removebg_preview"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="388dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="112dp"
+        android:layout_height="42dp"
+        android:backgroundTint="#000000"
+        android:text="Detalhes"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="283dp"
+        tools:layout_editor_absoluteY="196dp" />
+
+
+    <TextView
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:ems="10"
+        android:text="ÓCULOS DE PROTEÇÃO"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="402dp" />
+
+    <TextView
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:ems="10"
+        android:text="Validade:"
+        android:textSize="15sp"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="430dp" />
+
+    <TextView
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:ems="10"
+        android:textSize="15sp"
+        android:text="Data de validade:"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="452dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="110dp"
+        android:layout_height="46dp"
+        android:backgroundTint="#000000"
+        android:text="Detalhes"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="285dp"
+        tools:layout_editor_absoluteY="308dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="107dp"
+        android:layout_height="43dp"
+        android:backgroundTint="#000000"
+        android:text="Detalhes"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="288dp"
+        tools:layout_editor_absoluteY="430dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="110dp"
+        android:layout_height="102dp"
+        android:src="@drawable/seguranca2_1__removebg_preview"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="506dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="115dp"
+        android:layout_height="104dp"
+        android:src="@drawable/__g_protetor_auditivo_1__removebg_preview"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="624dp" />
+
+    <TextView
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:ems="10"
+        android:text="BOTAS DE SEGURANÇA"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="513dp" />
+
+    <TextView
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:ems="10"
+        android:textSize="15sp"
+        android:text="Validade:"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="534dp" />
+
+    <TextView
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:ems="10"
+        android:textSize="15sp"
+        android:text="Data de validade:"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="555dp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="111dp"
+        android:layout_height="39dp"
+        android:backgroundTint="#000000"
+        android:text="Detalhes"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="285dp"
+        tools:layout_editor_absoluteY="534dp" />
+
+    <TextView
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:ems="10"
+        android:text="PROTETOR AUDITIVO"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="635dp" />
+
+    <TextView
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:ems="10"
+        android:textSize="15sp"
+        android:text="Validade:"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="664dp" />
+
+    <TextView
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:ems="10"
+        android:textSize="15sp"
+        android:text="Data de validade:"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="685dp" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="116dp"
+        android:layout_height="46dp"
+        android:backgroundTint="#000000"
+        android:text="Detalhes"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="283dp"
+        tools:layout_editor_absoluteY="669dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="64dp"
+        android:layout_height="60dp"
+        android:src="@drawable/silhueta_de_icone_de_casa"
+        tools:layout_editor_absoluteX="342dp"
+        tools:layout_editor_absoluteY="12dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

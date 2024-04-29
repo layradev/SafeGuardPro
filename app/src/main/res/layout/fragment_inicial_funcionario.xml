@@ -1,278 +1,69 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.inicialFuncionarioFragment">
+    tools:context=".view.InicialSupervisorFragment">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#FAF9DB"
         android:backgroundTint="#FAF9DB"
-        android:text="@string/hello_blank_fragment"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
-
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/materialToolbar4"
-        android:layout_width="414dp"
-        android:layout_height="73dp"
-        android:background="#FFEB3B"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
-
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="361dp"
-        android:layout_height="90dp"
-        android:text="DADOS FUNCIONÁRIO"
-
-        android:textSize="34sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="87dp" />
+        tools:layout_editor_absoluteY="98dp" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nome do funcionario:"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="153dp" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="169dp"
-        android:layout_height="97dp"
-        android:src="@drawable/engenharia_logo__3__removebg_preview"
-        tools:layout_editor_absoluteX="-33dp"
-        tools:layout_editor_absoluteY="-10dp" />
-
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="48dp"
-        android:layout_height="51dp"
-        android:src="@drawable/silhueta_de_icone_de_casa"
-        tools:layout_editor_absoluteX="347dp"
-        tools:layout_editor_absoluteY="16dp" />
-
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="112dp"
-        android:layout_height="104dp"
-        android:src="@drawable/capacete"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="197dp" />
-
-
-
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="112dp"
-        android:layout_height="105dp"
-        android:src="@drawable/oculos"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="406dp" />
-
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="112dp"
-        android:layout_height="98dp"
-        android:src="@drawable/bota"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="510dp" />
-
-    <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="116dp"
-        android:layout_height="102dp"
-        android:src="@drawable/auditivos"
-        tools:layout_editor_absoluteX="12dp"
-        tools:layout_editor_absoluteY="608dp" />
-
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Capacete de segurança"
-        android:textSize="16sp"
+        android:text="Bem-Vindo Funcionário"
+        android:textSize="29sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="212dp" />
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="366dp" />
 
     <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Luvas de latex"
-        android:textSize="16sp"
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:text="Apenas com dedicação o trabalho ganha um propósito verdadeiro"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="422dp" />
+
+    <Button
+        android:id="@+id/btnCadastro"
+        android:layout_width="146dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#CC8822"
+        android:text="Suas Informações"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="312dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="480dp" />
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Óculos de proteçao"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="406dp" />
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar5"
+        android:layout_width="412dp"
+        android:layout_height="69dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFEB3B"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        tools:layout_editor_absoluteX="-10dp"
+        tools:layout_editor_absoluteY="738dp" />
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Botas de segurança"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="510dp" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Protetor auditivo"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="131dp"
-        tools:layout_editor_absoluteY="608dp" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Quantidade:"
-        tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="234dp" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Data de entrega"
-        tools:layout_editor_absoluteX="131dp"
-        tools:layout_editor_absoluteY="253dp" />
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Data de vencimento:"
-        tools:layout_editor_absoluteX="131dp"
-        tools:layout_editor_absoluteY="272dp" />
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Quantidade:"
-        tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="334dp" />
-
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Data de vencimento:"
-        tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="372dp" />
-
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Data de entrega:"
-        tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="353dp" />
-
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Quantidade:"
-        tools:layout_editor_absoluteX="131dp"
-        tools:layout_editor_absoluteY="428dp" />
-
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Data de entrega:"
-        tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="447dp" />
-
-    <TextView
-        android:id="@+id/textView21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Data de vencimento:"
-        tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="466dp" />
-
-    <TextView
-        android:id="@+id/textView22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Quantidade:"
-        tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="532dp" />
-
-    <TextView
-        android:id="@+id/textView23"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Data de entrega:"
-        tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="551dp" />
-
-    <TextView
-        android:id="@+id/textView24"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Data de vencimento:"
-        tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="570dp" />
-
-    <TextView
-        android:id="@+id/textView25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Quantidade"
-        tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="630dp" />
-
-    <TextView
-        android:id="@+id/textView26"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Data de entrega:"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="649dp" />
-
-    <TextView
-        android:id="@+id/textView27"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Data de vencimento:"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="668dp" />
 
     <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="109dp"
-        android:layout_height="99dp"
-        android:src="@drawable/luva"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="301dp" />
+        android:id="@+id/imageView6"
+        android:layout_width="412dp"
+        android:layout_height="582dp"
+        android:src="@drawable/vaga_para_auxiliar_de_producao_geral"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-78dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

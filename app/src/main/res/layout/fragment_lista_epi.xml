@@ -7,11 +7,7 @@
     android:background="#FAF9DB"
     tools:context=".view.ListaEpiFragment">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="484dp"
-        android:layout_height="85dp"
-        android:background="#FFEB3B" />
+
 
     <TextView
         android:layout_width="match_parent"
@@ -25,14 +21,6 @@
         android:textStyle="bold"
         tools:layout_editor_absoluteX="-10dp"
         tools:layout_editor_absoluteY="99dp" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="128dp"
-        android:layout_height="151dp"
-        android:src="@drawable/engenharia_logo__3__removebg_preview"
-        tools:layout_editor_absoluteX="-10dp"
-        tools:layout_editor_absoluteY="-32dp" />
 
 
     <TextView
@@ -264,12 +252,5 @@
         tools:layout_editor_absoluteX="283dp"
         tools:layout_editor_absoluteY="669dp" />
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="64dp"
-        android:layout_height="60dp"
-        android:src="@drawable/silhueta_de_icone_de_casa"
-        tools:layout_editor_absoluteX="342dp"
-        tools:layout_editor_absoluteY="12dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

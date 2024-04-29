@@ -4,32 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.InicalSupervisorFragment">
+    tools:context=".view.InicialSupervisorFragment">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment"
+        android:background="#FAF9DB"
+        android:backgroundTint="#FAF9DB"
         tools:layout_editor_absoluteX="10dp"
         tools:layout_editor_absoluteY="-1dp" />
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="412dp"
-        android:layout_height="86dp"
-        android:background="#FFEB3B"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        tools:layout_editor_absoluteX="-1dp"
-        tools:layout_editor_absoluteY="-2dp" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="105dp"
-        android:layout_height="98dp"
-        android:src="@drawable/thumbnail_engenharia_logo__3__removebg_preview"
-        tools:layout_editor_absoluteX="-9dp"
-        tools:layout_editor_absoluteY="-13dp" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -83,12 +66,6 @@
         tools:layout_editor_absoluteX="-10dp"
         tools:layout_editor_absoluteY="738dp" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="45dp"
-        android:layout_height="52dp"
-        android:src="@drawable/silhueta_de_icone_de_casa"
-        tools:layout_editor_absoluteX="332dp"
-        tools:layout_editor_absoluteY="16dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

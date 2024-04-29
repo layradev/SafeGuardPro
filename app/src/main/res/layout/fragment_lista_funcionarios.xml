@@ -8,13 +8,7 @@
     tools:context=".view.ListaFuncionariosFragment">
 
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="484dp"
-        android:layout_height="85dp"
-        android:background="#FFEB3B"
-        tools:layout_editor_absoluteX="-23dp"
-        tools:layout_editor_absoluteY="1dp" />
+
 
     <TextView
         android:layout_width="match_parent"
@@ -165,21 +159,7 @@
         tools:layout_editor_absoluteX="-2dp"
         tools:layout_editor_absoluteY="658dp" />
 
-    <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="116dp"
-        android:layout_height="143dp"
-        android:src="@drawable/engenharia_logo__3__removebg_preview"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-28dp" />
 
-    <ImageView
-        android:id="@+id/imageView16"
-        android:layout_width="58dp"
-        android:layout_height="64dp"
-        android:src="@drawable/silhueta_de_icone_de_casa"
-        tools:layout_editor_absoluteX="337dp"
-        tools:layout_editor_absoluteY="12dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,15 +6,7 @@
     android:background="#FAFDBA"
     android:orientation="vertical">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="412dp"
-        android:layout_height="86dp"
-        android:background="#FFEB3B"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        tools:layout_editor_absoluteX="-1dp"
-        tools:layout_editor_absoluteY="-2dp" />
+
 
     <EditText
         android:id="@+id/edtNome"
@@ -111,20 +103,5 @@
         tools:layout_editor_absoluteX="-1dp"
         tools:layout_editor_absoluteY="739dp" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="110dp"
-        android:layout_height="112dp"
-        android:src="@drawable/thumbnail_engenharia_logo__3__removebg_preview"
-        tools:layout_editor_absoluteX="-10dp"
-        tools:layout_editor_absoluteY="-10dp" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="45dp"
-        android:layout_height="52dp"
-        android:src="@drawable/silhueta_de_icone_de_casa"
-        tools:layout_editor_absoluteX="332dp"
-        tools:layout_editor_absoluteY="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

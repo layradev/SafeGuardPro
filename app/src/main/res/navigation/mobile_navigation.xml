@@ -1,6 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/mobile_navigation">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.happyhour.safeguardpro.view.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.happyhour.safeguardpro.view.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/inicalSupervisorFragment"
+        android:name="com.happyhour.safeguardpro.view.InicialSupervisorFragment"
+        android:label="fragment_incial_funcionario"
+        tools:layout="@layout/fragment_inicial_funcionario" />
+    <fragment
+        android:id="@+id/detalhesEpiFragment"
+        android:name="com.happyhour.safeguardpro.view.DetalhesEpiFragment"
+        android:label="fragment_detalhes_epi"
+        tools:layout="@layout/fragment_detalhes_epi" />
+    <fragment
+        android:id="@+id/cadastroEpiFragment"
+        android:name="com.happyhour.safeguardpro.view.CadastroEpiFragment"
+        android:label="fragment_cadastro_epi"
+        tools:layout="@layout/fragment_cadastro_epi" />
+    <fragment
+        android:id="@+id/inicialFuncionarioFragment"
+        android:name="com.happyhour.safeguardpro.view.inicialFuncionarioFragment"
+        android:label="fragment_inicial_funcionario"
+        tools:layout="@layout/fragment_funcionario_detail" />
+    <fragment
+        android:id="@+id/listaFuncionariosFragment"
+        android:name="com.happyhour.safeguardpro.view.ListaFuncionariosFragment"
+        android:label="fragment_lista_funcionarios"
+        tools:layout="@layout/fragment_lista_funcionarios" />
+    <fragment
+        android:id="@+id/entregaFragment"
+        android:name="com.happyhour.safeguardpro.view.EntregaFragment"
+        android:label="fragment_entrega"
+        tools:layout="@layout/fragment_entrega" />
+    <fragment
+        android:id="@+id/listaEpiFragment"
+        android:name="com.happyhour.safeguardpro.view.ListaEpiFragment"
+        android:label="fragment_lista_epi"
+        tools:layout="@layout/fragment_lista_epi" />
+    <fragment
+        android:id="@+id/incialFuncionarioFragment2"
+        android:name="com.happyhour.safeguardpro.view.InicialFuncionarioFragment"
+        android:label="IncialFuncionarioFragment" />
 
 </navigation>

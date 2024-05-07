@@ -8,12 +8,25 @@
     android:orientation="vertical"
     tools:context=".view.LoginFragment">
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <EditText
         android:id="@+id/editTextTextEmailAddress2"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:ems="10"
         android:hint="Email:"
+        android:layout_marginTop="15dp"
         android:inputType="textEmailAddress"
         app:layout_constraintDimensionRatio="w,1:1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,8 +37,8 @@
         android:id="@+id/editTextTextPassword2"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:ems="10"
         android:hint="Senha:"
+        android:layout_marginTop="15dp"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,33 +50,23 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#231919"
         android:text="ENTRAR"
+        android:layout_marginTop="15dp"
         android:textColorHighlight="#882424"
         android:textColorLink="#634A4A"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="11dp"
-        tools:layout_editor_absoluteY="457dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+
 
     <view
         android:id="@+id/view2"
         class="androidx.appcompat.widget.ActionMenuView"
         android:layout_width="419dp"
         android:layout_height="60dp"
-
         android:layout_marginBottom="4dp"
         android:background="#FFEB3B"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="0dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:text="LOGIN"
-        android:textAlignment="center"
-        android:textSize="35sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="129dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

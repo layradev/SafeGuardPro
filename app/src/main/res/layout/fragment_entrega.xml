@@ -8,76 +8,19 @@
     android:backgroundTint="#FAF9DB"
     tools:context=".view.EntregaFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
-
-
-    <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Nome funcionário:"
-        android:inputType="text"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="273dp" />
-
-    <EditText
-        android:id="@+id/editTextText2"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Nome EPI:"
-        android:inputType="text"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="472dp" />
-
-    <EditText
-        android:id="@+id/editTextText3"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Nome EPI:"
-        android:inputType="text"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="342dp" />
-
-    <EditText
-        android:id="@+id/editTextText4"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Nome EPI:"
-        android:inputType="text"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="408dp" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="418dp"
-        android:layout_height="74dp"
+        android:layout_width="399dp"
+        android:layout_height="75dp"
         android:text="ENTREGA"
+        android:layout_marginTop="15dp"
         android:textAlignment="center"
         android:textSize="35sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="-13dp"
-        tools:layout_editor_absoluteY="89dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="310dp"
-        android:layout_height="46dp"
-        android:backgroundTint="#000000"
-        android:text="CONCLUIR"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="556dp" />
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextText5"
@@ -85,8 +28,72 @@
         android:layout_height="46dp"
         android:ems="10"
         android:hint="Nome empresa:"
+        android:layout_marginTop="15dp"
         android:inputType="text"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="208dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nome funcionário:"
+        android:layout_marginTop="15dp"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText5" />
+
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nome EPI:"
+        android:layout_marginTop="15dp"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+
+    <EditText
+        android:id="@+id/editTextText4"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nome EPI:"
+        android:layout_marginTop="15dp"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nome EPI:"
+        android:layout_marginTop="15dp"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="310dp"
+        android:layout_height="46dp"
+        android:backgroundTint="#000000"
+        android:text="CONCLUIR"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

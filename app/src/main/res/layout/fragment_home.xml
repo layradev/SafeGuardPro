@@ -8,12 +8,26 @@
     android:backgroundTint="#FAF9DB"
     tools:context=".view.HomeFragment">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/epi"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:rotationX="-9"
         android:text="Bem-Vindo"
+        android:layout_marginTop="20dp"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,11 +39,25 @@
         android:layout_width="383dp"
         android:layout_height="28dp"
         android:text="A segurança no trabalho é vital. Sem ela, pode ser um pesadelo final."
+        android:layout_marginTop="15dp"
         android:textSize="12sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="114dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#CC8822"
+        android:text="Login"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/materialToolbar3"
@@ -41,29 +69,6 @@
         android:theme="?attr/actionBarTheme"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="670dp" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="114dp"
-        android:layout_height="48dp"
-        android:backgroundTint="#CC8822"
-        android:text="Login"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/epi"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="73dp" />
-
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="59dp"

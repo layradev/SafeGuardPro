@@ -1,6 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FAF9DB">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="4dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:text="CAPACETE DE SEGURANÇA"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imgEpi"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/tvValidade"
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:ems="10"
+        android:text="Validade:"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/imgEpi"
+        app:layout_constraintTop_toBottomOf="@+id/textView32"
+        android:layout_marginStart="10dp"/>
+
+
+    <TextView
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:ems="10"
+        android:text="Data de validade:"
+        app:layout_constraintStart_toEndOf="@id/imgEpi"
+        app:layout_constraintTop_toBottomOf="@+id/tvValidade"
+        android:layout_marginStart="10dp"/>
+
+    <ImageView
+        android:id="@+id/imgEpi"
+        android:layout_width="88dp"
+        android:layout_height="107dp"
+        android:src="@drawable/capacete_removebg_preview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-1dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

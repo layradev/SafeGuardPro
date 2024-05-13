@@ -20,7 +20,7 @@ class ListaEpiFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentListaEpiBinding.inflate(inflater, container, false)
-        return inflater.inflate(R.layout.fragment_lista_epi, container, false)
+        return binding.root
     }
 
 }

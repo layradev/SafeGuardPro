@@ -20,7 +20,7 @@ class InicialFuncionarioFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentInicialFuncionarioBinding.inflate(inflater, container, false)
-        return inflater.inflate(R.layout.fragment_inicial_funcionario, container, false)
+        return binding.root
     }
 
 }

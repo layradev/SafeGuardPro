@@ -19,7 +19,7 @@ class ListaFuncionariosFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentListaFuncionariosBinding.inflate(inflater, container, false)
-        return inflater.inflate(R.layout.fragment_lista_funcionarios, container, false)
+        return binding.root
     }
 
 }

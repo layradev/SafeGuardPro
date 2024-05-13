@@ -18,7 +18,7 @@
         android:id="@+id/inicalSupervisorFragment"
         android:name="com.happyhour.safeguardpro.view.InicialSupervisorFragment"
         android:label="fragment_incial_funcionario"
-        tools:layout="@layout/fragment_inicial_funcionario" />
+        tools:layout="@layout/fragment_inicial_supervisor" />
     <fragment
         android:id="@+id/detalhesEpiFragment"
         android:name="com.happyhour.safeguardpro.view.DetalhesEpiFragment"
@@ -31,9 +31,9 @@
         tools:layout="@layout/fragment_cadastro_epi" />
     <fragment
         android:id="@+id/inicialFuncionarioFragment"
-        android:name="com.happyhour.safeguardpro.view.inicialFuncionarioFragment"
+        android:name="com.happyhour.safeguardpro.view.InicialFuncionarioFragment"
         android:label="fragment_inicial_funcionario"
-        tools:layout="@layout/fragment_funcionario_detail" />
+        tools:layout="@layout/fragment_inicial_funcionario" />
     <fragment
         android:id="@+id/listaFuncionariosFragment"
         android:name="com.happyhour.safeguardpro.view.ListaFuncionariosFragment"
@@ -49,9 +49,5 @@
         android:name="com.happyhour.safeguardpro.view.ListaEpiFragment"
         android:label="fragment_lista_epi"
         tools:layout="@layout/fragment_lista_epi" />
-    <fragment
-        android:id="@+id/incialFuncionarioFragment2"
-        android:name="com.happyhour.safeguardpro.view.InicialFuncionarioFragment"
-        android:label="IncialFuncionarioFragment" />
 
 </navigation>

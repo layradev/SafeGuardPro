@@ -1,33 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FAF9DB"
-    tools:context=".view.ListaEpiFragment">
-
-
-    <TextView
-        android:id="@+id/tvLista"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="LISTA"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Title"
-        android:textSize="35sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+    tools:context=".view.ListaFuncionariosFragment"
+    android:orientation="vertical">
 
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvEpis"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_weight="@integer/material_motion_duration_long_1"
         app:layout_constraintTop_toBottomOf="@+id/tvLista"
         tools:listitem="@layout/list_item_epi" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        android:layout_gravity="end"
+        />
+
+</LinearLayout>

@@ -9,7 +9,7 @@
 
 
     <TextView
-        android:id="@+id/TextView"
+        android:id="@+id/tvCadastro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textEmailSubject"
@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/editCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -33,10 +33,10 @@
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextView" />
+        app:layout_constraintTop_toBottomOf="@+id/tvCadastro" />
 
     <EditText
-        android:id="@+id/editTextText4"
+        android:id="@+id/editValidade"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -45,10 +45,10 @@
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
+        app:layout_constraintTop_toBottomOf="@+id/editCadastro" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editDataValidade"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -57,7 +57,7 @@
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
+        app:layout_constraintTop_toBottomOf="@+id/editValidade" />
 
     <Button
         android:id="@+id/button"
@@ -68,16 +68,7 @@
         android:layout_marginTop="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar5"
-        android:layout_width="412dp"
-        android:layout_height="69dp"
-        android:background="#FFEB3B"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/editDataValidade" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

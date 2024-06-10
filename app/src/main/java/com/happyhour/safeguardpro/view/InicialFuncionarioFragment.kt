@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.happyhour.safeguardpro.R
 import com.happyhour.safeguardpro.databinding.FragmentHomeBinding
 import com.happyhour.safeguardpro.databinding.FragmentInicialFuncionarioBinding
@@ -23,4 +24,12 @@ class InicialFuncionarioFragment : Fragment() {
         return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.btnCadastro.setOnClickListener {
+            findNavController().navigate(R.id.cadastroFuncionarioFragment)
+        }
+
+    }
 }

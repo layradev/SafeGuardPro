@@ -9,53 +9,58 @@
     tools:context=".view.LoginFragment">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
         android:text="LOGIN"
-        android:layout_marginTop="20dp"
         android:textAlignment="center"
         android:textSize="35sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress2"
+        android:id="@+id/edtEmail"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
         android:hint="Email:"
-        android:layout_marginTop="15dp"
         android:inputType="textEmailAddress"
         app:layout_constraintDimensionRatio="w,1:1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/tvLogin" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/edtSenha"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:hint="Senha:"
-        android:layout_marginTop="15dp"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2" />
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnLogar"
         android:layout_width="370dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="228dp"
         android:backgroundTint="#231919"
         android:text="ENTRAR"
-        android:layout_marginTop="15dp"
         android:textColorHighlight="#882424"
         android:textColorLink="#634A4A"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+        app:layout_constraintTop_toBottomOf="@+id/edtSenha" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

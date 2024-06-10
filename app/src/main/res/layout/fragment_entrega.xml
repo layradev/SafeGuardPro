@@ -10,7 +10,7 @@
 
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tvEntrega"
         android:layout_width="399dp"
         android:layout_height="75dp"
         android:text="ENTREGA"
@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText5"
+        android:id="@+id/editNomeEmpresa"
         android:layout_width="351dp"
         android:layout_height="46dp"
         android:ems="10"
@@ -32,10 +32,10 @@
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/tvEntrega" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/editNomeFuncionario"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -44,11 +44,11 @@
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText5" />
+        app:layout_constraintTop_toBottomOf="@+id/editNomeEmpresa" />
 
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/editNomeEpi"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -57,35 +57,11 @@
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
-
-    <EditText
-        android:id="@+id/editTextText4"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Nome EPI:"
-        android:layout_marginTop="15dp"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
-
-    <EditText
-        android:id="@+id/editTextText2"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Nome EPI:"
-        android:layout_marginTop="15dp"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
+        app:layout_constraintTop_toBottomOf="@+id/editNomeFuncionario" />
 
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnConcluir"
         android:layout_width="310dp"
         android:layout_height="46dp"
         android:backgroundTint="#000000"
@@ -93,7 +69,7 @@
         android:layout_marginTop="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintTop_toBottomOf="@+id/editNomeEpi" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

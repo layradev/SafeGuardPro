@@ -18,7 +18,7 @@
             android:padding="10dp">
 
     <TextView
-        android:id="@+id/textView32"
+        android:id="@+id/tvTitulo"
         android:layout_width="238dp"
         android:layout_height="21dp"
         android:layout_marginTop="15dp"
@@ -31,6 +31,17 @@
         android:layout_marginStart="10dp"/>
 
     <TextView
+        android:id="@+id/tvNome"
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:ems="10"
+        android:text="Nome:"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/imgEpi"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
         android:id="@+id/tvValidade"
         android:layout_width="238dp"
         android:layout_height="21dp"
@@ -38,17 +49,48 @@
         android:text="Validade:"
         android:textStyle="normal"
         app:layout_constraintStart_toEndOf="@+id/imgEpi"
-        app:layout_constraintTop_toBottomOf="@+id/textView32"
+        app:layout_constraintTop_toBottomOf="@+id/tvNome"
         android:layout_marginStart="10dp"/>
 
 
     <TextView
+        android:id="@+id/tvCa"
         android:layout_width="238dp"
         android:layout_height="21dp"
         android:ems="10"
-        android:text="Data de validade:"
+        android:text="CA:"
         app:layout_constraintStart_toEndOf="@id/imgEpi"
         app:layout_constraintTop_toBottomOf="@+id/tvValidade"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/tvDataFabricacao"
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:ems="10"
+        android:text="Data de fabricação:"
+        app:layout_constraintStart_toEndOf="@id/imgEpi"
+        app:layout_constraintTop_toBottomOf="@+id/tvCa"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/tvTempoUso"
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:ems="10"
+        android:text="Tempo de uso:"
+        app:layout_constraintStart_toEndOf="@id/imgEpi"
+        app:layout_constraintTop_toBottomOf="@+id/tvDataFabricacao"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/tvModoUso"
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:ems="10"
+        android:text="Modo de uso:"
+        app:layout_constraintStart_toEndOf="@id/imgEpi"
+        app:layout_constraintTop_toBottomOf="@+id/tvTempoUso"
         android:layout_marginStart="10dp"/>
 
     <ImageView
@@ -60,8 +102,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="-1dp" />
-
-
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

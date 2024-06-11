@@ -26,7 +26,7 @@ class CadastroEpiFragment : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.button.setOnClickListener {
+        binding.btnCadastrar.setOnClickListener {
             findNavController().navigate(R.id.listaEpiFragment)
         }
     }

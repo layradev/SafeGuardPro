@@ -14,7 +14,7 @@
         android:layout_width="399dp"
         android:layout_height="75dp"
         android:text="ENTREGA"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="130dp"
         android:textAlignment="center"
         android:textSize="35sp"
         android:textStyle="bold"
@@ -23,11 +23,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editNomeEmpresa"
+        android:id="@+id/editDataEntrega"
         android:layout_width="351dp"
         android:layout_height="46dp"
         android:ems="10"
-        android:hint="Nome empresa:"
+        android:hint="Data da entrega:"
         android:layout_marginTop="15dp"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,29 +35,29 @@
         app:layout_constraintTop_toBottomOf="@+id/tvEntrega" />
 
     <EditText
-        android:id="@+id/editNomeFuncionario"
+        android:id="@+id/editIdFuncionario"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Nome funcionário:"
+        android:hint="Id do funcionário:"
         android:layout_marginTop="15dp"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editNomeEmpresa" />
+        app:layout_constraintTop_toBottomOf="@+id/editDataEntrega" />
 
 
     <EditText
-        android:id="@+id/editNomeEpi"
+        android:id="@+id/editIdEpi"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Nome EPI:"
+        android:hint="Id Epi:"
         android:layout_marginTop="15dp"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editNomeFuncionario" />
+        app:layout_constraintTop_toBottomOf="@+id/editIdFuncionario" />
 
 
     <Button
@@ -69,7 +69,7 @@
         android:layout_marginTop="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editNomeEpi" />
+        app:layout_constraintTop_toBottomOf="@+id/editIdEpi" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

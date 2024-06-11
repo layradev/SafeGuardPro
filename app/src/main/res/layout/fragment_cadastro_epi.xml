@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:inputType="textEmailSubject"
         android:text=" CADASTRO EPI  "
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="100dp"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Title"
         android:textSize="35sp"
@@ -24,7 +24,43 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editCadastro"
+        android:id="@+id/editNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nome:"
+        android:layout_marginTop="15dp"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCadastro" />
+
+    <EditText
+        android:id="@+id/editFabricacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Data de fabricação:"
+        android:layout_marginTop="15dp"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNome" />
+
+    <EditText
+        android:id="@+id/editTempoUso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Tempo de uso:"
+        android:layout_marginTop="15dp"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editFabricacao" />
+
+    <EditText
+        android:id="@+id/editCa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -33,19 +69,7 @@
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvCadastro" />
-
-    <EditText
-        android:id="@+id/editValidade"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Validade:"
-        android:layout_marginTop="15dp"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editCadastro" />
+        app:layout_constraintTop_toBottomOf="@+id/editTempoUso" />
 
     <EditText
         android:id="@+id/editDataValidade"
@@ -57,7 +81,20 @@
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editValidade" />
+        app:layout_constraintTop_toBottomOf="@+id/editCa" />
+
+    <EditText
+        android:id="@+id/editModoUso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Modo de uso:"
+        android:layout_marginTop="15dp"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDataValidade" />
+
 
     <Button
         android:id="@+id/button"
@@ -68,7 +105,7 @@
         android:layout_marginTop="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editDataValidade" />
+        app:layout_constraintTop_toBottomOf="@+id/editModoUso" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

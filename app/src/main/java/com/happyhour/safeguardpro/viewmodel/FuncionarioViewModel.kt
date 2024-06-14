@@ -23,6 +23,12 @@ class FuncionarioViewModel(application: Application) : AndroidViewModel(applicat
     private val mErro = MutableLiveData<String>()
     val erro: LiveData<String> = mErro
 
+    private val mCreatedFuncionario = MutableLiveData<Funcionario>()
+    val createdfuncionario: LiveData<Funcionario> = mCreatedFuncionario
+
+    private val mUpdatedFuncionario = MutableLiveData<Funcionario>()
+    val updatedfuncionario: LiveData<Funcionario> = mUpdatedFuncionario
+
     private val mDeletedFuncionario = MutableLiveData<Boolean>()
     var deletedFuncionario: LiveData<Boolean> = mDeletedFuncionario
 
@@ -49,6 +55,16 @@ class FuncionarioViewModel(application: Application) : AndroidViewModel(applicat
         }
     }
 
+    fun getFuncionarioByCpf(cpf: String) {
+        viewModelScope.launch(Dispatchers.IO) {
+            try {
+                mFuncionario.postValue(repository.getFuncionarioByCpf(cpf))
+            } catch (e: Exception) {
+                mErro.postValue(e.message)
+            }
+        }
+    }
+
     fun delete(id: Int) {
         viewModelScope.launch(Dispatchers.IO) {
             try {
@@ -62,7 +78,7 @@ class FuncionarioViewModel(application: Application) : AndroidViewModel(applicat
     fun insert(funcionario: Funcionario) {
         viewModelScope.launch(Dispatchers.IO) {
             try {
-                val createdEpi = repository.insertFuncionario(funcionario)
+                val createdFuncionario = repository.insertFuncionario(funcionario)
                 mCreatedFuncionario.postValue(createdFuncionario)
             } catch (e: Exception) {
                 mErro.postValue(e.message)
@@ -74,12 +90,11 @@ class FuncionarioViewModel(application: Application) : AndroidViewModel(applicat
     fun update(funcionario: Funcionario) {
         viewModelScope.launch(Dispatchers.IO) {
             try {
-                val updatedFuncionario = repository.updateFuncionario(funcionario.id, funcionario)
+                val updatedFuncionario = repository.updateFuncionario(funcionario)
                 mUpdatedFuncionario.postValue(updatedFuncionario)
             } catch (e: Exception) {
                 mErro.postValue(e.message)
             }
         }
     }
-
 }

@@ -26,12 +26,13 @@ class InicialSupervisorFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.btnEntrega.setOnClickListener {
-            findNavController().navigate(R.id.entregaFragment)
+            findNavController().navigate(R.id.listaEntregasFragment)
         }
 
         binding.btnListaEpi.setOnClickListener {
             findNavController().navigate(R.id.listaEpiFragment)
         }
+
         binding.btnLista.setOnClickListener {
             findNavController().navigate(R.id.listaFuncionariosFragment)
 

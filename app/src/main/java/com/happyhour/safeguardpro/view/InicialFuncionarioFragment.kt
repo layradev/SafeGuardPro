@@ -19,7 +19,7 @@ class InicialFuncionarioFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentInicialFuncionarioBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -27,9 +27,12 @@ class InicialFuncionarioFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btnCadastro.setOnClickListener {
+        binding.btnFuncionario.setOnClickListener {
             findNavController().navigate(R.id.cadastroFuncionarioFragment)
         }
 
+        binding.btnEpis.setOnClickListener {
+            findNavController().navigate(R.id.listaEpiFragment)
+        }
     }
 }

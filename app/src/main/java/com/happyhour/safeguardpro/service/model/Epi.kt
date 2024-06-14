@@ -1,11 +1,11 @@
 package com.happyhour.safeguardpro.service.model
 
 data class Epi(
-    val id: Int,
-    val nome: String,
-    val data_fabricacao: String,
-    val tempo_uso: String,
-    val ca: String,
-    val validade: String,
-    val modo_uso:String
+    var id: Int = 0,
+    var nome: String = "",
+    var data_fabricacao: String = "",
+    var tempo_uso: String = "",
+    var ca: Int = 0,
+    var validade: String = "",
+    var modo_uso:String = ""
 )

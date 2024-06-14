@@ -41,7 +41,7 @@ class EntregaViewModel(application: Application) : AndroidViewModel(application)
         }
     }
 
-    fun getEpi(id: Int) {
+    fun getEntrega(id: Int) {
         viewModelScope.launch(Dispatchers.IO) {
             try {
                 mEntrega.postValue(repository.getEntrega(id))

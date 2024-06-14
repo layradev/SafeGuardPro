@@ -16,6 +16,9 @@ interface FuncionarioService {
     @GET("get_funcionario/{funconario_id}")
     suspend fun getFuncionarioById(@Path("funcionario_id") id: Int): Response<List<Funcionario>>
 
+    @GET("get_funcionario/{funconario_cpf}")
+    suspend fun getFuncionarioByCpf(@Path("funcionario_cpf") cpf: String): Response<List<Funcionario>>
+
     @GET("select_funcionario")
     suspend fun getFuncionarios(): List<Funcionario>
 
@@ -27,7 +30,9 @@ interface FuncionarioService {
     suspend fun createFuncionario(
         @Part("nome") nome: RequestBody,
         @Part("cpf") cpf: RequestBody,
-        @Part("cargo") cargo: RequestBody
+        @Part("cargo") cargo: RequestBody,
+        @Part("senha") senha: RequestBody,
+        @Part("admin") admin: RequestBody,
     ): Response<Funcionario>
 
     @Multipart
@@ -36,6 +41,8 @@ interface FuncionarioService {
         @Path("funcionario_id") funcionario_id: Int,
         @Part("nome") nome: RequestBody,
         @Part("cpf") cpf: RequestBody,
-        @Part("cargo") cargo: RequestBody
+        @Part("cargo") cargo: RequestBody,
+        @Part("senha") senha: RequestBody,
+        @Part("admin") admin: RequestBody,
     ): Response<Funcionario>
 }

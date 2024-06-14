@@ -18,20 +18,17 @@
         android:textSize="35sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.532"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/edtEmail"
+        android:id="@+id/edtCpf"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:hint="Email:"
-        android:inputType="textEmailAddress"
-        app:layout_constraintDimensionRatio="w,1:1"
+        android:hint="CPF:"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvLogin" />
 
@@ -43,9 +40,8 @@
         android:hint="Senha:"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/edtCpf" />
 
     <Button
         android:id="@+id/btnLogar"

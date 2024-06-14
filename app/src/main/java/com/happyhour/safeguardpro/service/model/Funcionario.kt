@@ -1,8 +1,10 @@
 package com.happyhour.safeguardpro.service.model
 
 data class Funcionario(
-    val id: Int,
-    val nome: String,
-    val cpf: String,
-    val cargo: String
+    var id: Int = 0,
+    var nome: String = "",
+    var cpf: String = "",
+    var cargo: String = "",
+    var senha: String = "",
+    var admin: Boolean = false
 )

@@ -10,7 +10,7 @@ import okhttp3.RequestBody.Companion.toRequestBody
 class FuncionarioRepository(context: Context) {
     private val mRemote = RetrofitClient.createService(FuncionarioService::class.java)
 
-    val funcionarioEmpty = Funcionario(0, "", "", "")
+    val funcionarioEmpty = Funcionario(0, "", "", "", "", false)
 
     suspend fun getFuncionarios(): List<Funcionario> {
         return mRemote.getFuncionarios()
@@ -25,16 +25,27 @@ class FuncionarioRepository(context: Context) {
         }
     }
 
+    suspend fun getFuncionarioByCpf(cpf: String): Funcionario {
+        val response = mRemote.getFuncionarioByCpf(cpf)
+        return if (response.isSuccessful) {
+            response.body()?.first() ?: funcionarioEmpty
+        } else {
+            funcionarioEmpty
+        }
+    }
+
     suspend fun deleteFuncionario(id: Int): Boolean {
         return mRemote.deleteFuncionarioById(id).isSuccessful
     }
 
-    suspend fun updateFuncionario(id: Int, funcionario: Funcionario): Funcionario {
+    suspend fun updateFuncionario(funcionario: Funcionario): Funcionario {
         return mRemote.updateFuncionario(
             nome = funcionario.nome.toRequestBody("text/plain".toMediaTypeOrNull()),
             cargo = funcionario.cargo.toRequestBody("text/plain".toMediaTypeOrNull()),
             cpf = funcionario.cpf.toRequestBody("text/plain".toMediaTypeOrNull()),
-            funcionario_id = id
+            senha = funcionario.senha.toRequestBody("text/plain".toMediaTypeOrNull()),
+            admin = funcionario.admin.toString().toRequestBody("text/plain".toMediaTypeOrNull()),
+            funcionario_id = funcionario.id
         ).body() ?: funcionarioEmpty
     }
 
@@ -42,8 +53,9 @@ class FuncionarioRepository(context: Context) {
         return mRemote.createFuncionario(
             nome = funcionario.nome.toRequestBody("text/plain".toMediaTypeOrNull()),
             cpf = funcionario.cpf.toRequestBody("text/plain".toMediaTypeOrNull()),
-            cargo = funcionario.cargo.toRequestBody("text/plain".toMediaTypeOrNull())
+            cargo = funcionario.cargo.toRequestBody("text/plain".toMediaTypeOrNull()),
+            senha = funcionario.senha.toRequestBody("text/plain".toMediaTypeOrNull()),
+            admin = funcionario.admin.toString().toRequestBody("text/plain".toMediaTypeOrNull()),
         ).body() ?: funcionarioEmpty
     }
-
 }

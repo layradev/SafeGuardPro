@@ -1,8 +1,8 @@
 package com.happyhour.safeguardpro.service.model
 
 data class Entrega(
-    val id: Int,
-    val data_entrega: String,
-    val funcionario_id: Int,
-    val epi_id: Int
+    var id: Int = 0,
+    var data_entrega: String = "",
+    var funcionario_id: Int = 0,
+    var epi_id: Int = 0
 )

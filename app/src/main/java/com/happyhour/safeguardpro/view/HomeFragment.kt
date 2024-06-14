@@ -29,5 +29,4 @@ class HomeFragment : Fragment() {
             findNavController().navigate(R.id.loginFragment)
         }
     }
-
 }

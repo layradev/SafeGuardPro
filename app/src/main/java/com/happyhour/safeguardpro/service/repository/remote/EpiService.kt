@@ -14,6 +14,9 @@ interface EpiService {
     @GET("get_epi/{epi_id}")
     suspend fun getEpiById(@Path("epi_id") id: Int): Response<List<Epi>>
 
+    @GET("get_epi/{epi_id}")
+    suspend fun getEpiByCa(@Path("epi_ca") ca: Int): Response<List<Epi>>
+
     @GET("delete_epi/{epi_id}")
     suspend fun deleteEpiById(@Path("epi_id") id: Int): Response<Epi>
 
@@ -34,6 +37,7 @@ interface EpiService {
     @Multipart
     @PUT("update_epi/{epi_id}")
     suspend fun updateEpi(
+        @Path("epi_id") id: Int,
         @Part("nome") nome: RequestBody,
         @Part("data_fabricacao") data_fabricacao: RequestBody,
         @Part("tempo_uso") tempo_uso: RequestBody,

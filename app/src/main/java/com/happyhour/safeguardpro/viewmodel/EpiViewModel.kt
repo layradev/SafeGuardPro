@@ -20,6 +20,12 @@ class EpiViewModel(application: Application): AndroidViewModel(application) {
     private val mErro = MutableLiveData<String>()
     val erro: LiveData<String> = mErro
 
+    private val mCreatedEpi = MutableLiveData<Epi>()
+    val createdEpi: LiveData<Epi> = mCreatedEpi
+
+    private val mUpdatedEpi = MutableLiveData<Epi>()
+    val updatedEpi: LiveData<Epi> = mUpdatedEpi
+
     private val mDeletedEpi = MutableLiveData<Boolean>()
     var deletedEpi: LiveData<Boolean> = mDeletedEpi
 
@@ -40,6 +46,16 @@ class EpiViewModel(application: Application): AndroidViewModel(application) {
         viewModelScope.launch(Dispatchers.IO) {
             try {
                 mEpi.postValue(repository.getEpi(id))
+            } catch (e: Exception) {
+                mErro.postValue(e.message)
+            }
+        }
+    }
+
+    fun getEpiByCa(ca: Int) {
+        viewModelScope.launch(Dispatchers.IO) {
+            try {
+                mEpi.postValue(repository.getEpiByCa(ca))
             } catch (e: Exception) {
                 mErro.postValue(e.message)
             }
@@ -70,13 +86,11 @@ class EpiViewModel(application: Application): AndroidViewModel(application) {
     fun update(epi: Epi) {
         viewModelScope.launch(Dispatchers.IO) {
             try {
-                val updatedEpi = repository.updateEpi(epi.id, epi)
+                val updatedEpi = repository.updateEpi(epi)
                 mUpdatedEpi.postValue(updatedEpi)
             } catch (e: Exception) {
                 mErro.postValue(e.message)
             }
         }
     }
-
-
 }

@@ -20,7 +20,7 @@
 
 
         <ImageView
-            android:id="@+id/imgFuncionario"
+            android:id="@+id/imgEntrega"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:src="@drawable/funcionario"
@@ -37,7 +37,7 @@
             android:text="Nome:"
             android:textStyle="bold"
             android:layout_marginEnd="20dp"
-            app:layout_constraintStart_toEndOf="@id/imgFuncionario"
+            app:layout_constraintStart_toEndOf="@id/imgEntrega"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginStart="10dp"
             />
@@ -49,7 +49,7 @@
             android:layout_height="wrap_content"
             android:text="Cpf:"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/imgFuncionario"
+            app:layout_constraintStart_toEndOf="@+id/imgEntrega"
             app:layout_constraintTop_toBottomOf="@+id/tvNome"
             android:layout_marginStart="10dp"
             />
@@ -59,11 +59,11 @@
                 android:id="@+id/tvCargo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toEndOf="@+id/imgFuncionario"
+                app:layout_constraintStart_toEndOf="@+id/imgEntrega"
                 app:layout_constraintTop_toBottomOf="@+id/tvCpf"
                 android:text="Cargo: "
                 android:textStyle="bold"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 android:layout_marginStart="10dp"/>
 
 

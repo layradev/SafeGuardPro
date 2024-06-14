@@ -8,7 +8,6 @@
     android:backgroundTint="#FAF9DB"
     tools:context=".view.EntregaFragment">
 
-
     <TextView
         android:id="@+id/tvEntrega"
         android:layout_width="399dp"
@@ -35,30 +34,28 @@
         app:layout_constraintTop_toBottomOf="@+id/tvEntrega" />
 
     <EditText
-        android:id="@+id/editNomeFuncionario"
+        android:id="@+id/edtCpf"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Nome funcionário:"
+        android:hint="CPF:"
         android:layout_marginTop="15dp"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editNomeEmpresa" />
 
-
     <EditText
-        android:id="@+id/editNomeEpi"
+        android:id="@+id/edtCa"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Nome EPI:"
+        android:hint="CA:"
         android:layout_marginTop="15dp"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editNomeFuncionario" />
-
+        app:layout_constraintTop_toBottomOf="@+id/edtCpf" />
 
     <Button
         android:id="@+id/btnConcluir"
@@ -69,7 +66,6 @@
         android:layout_marginTop="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editNomeEpi" />
-
+        app:layout_constraintTop_toBottomOf="@+id/edtCa" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

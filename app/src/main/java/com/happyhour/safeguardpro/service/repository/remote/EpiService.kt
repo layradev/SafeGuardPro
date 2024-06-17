@@ -11,10 +11,10 @@ import retrofit2.http.Part
 import retrofit2.http.Path
 
 interface EpiService {
-    @GET("get_epi/{epi_id}")
+    @GET("select_epis/{epi_id}")
     suspend fun getEpiById(@Path("epi_id") id: Int): Response<List<Epi>>
 
-    @GET("get_epi/{epi_id}")
+    @GET("select_epis1/{epi_ca}")
     suspend fun getEpiByCa(@Path("epi_ca") ca: Int): Response<List<Epi>>
 
     @GET("delete_epi/{epi_id}")
@@ -24,7 +24,7 @@ interface EpiService {
     suspend fun getEpis(): List<Epi>
 
     @Multipart
-    @POST("create_epi")
+    @POST("add_epi")
     suspend fun createEpi(
         @Part("nome") nome: RequestBody,
         @Part("data_fabricacao") data_fabricacao: RequestBody,

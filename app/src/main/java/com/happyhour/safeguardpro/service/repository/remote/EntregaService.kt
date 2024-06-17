@@ -12,17 +12,17 @@ import retrofit2.http.Path
 
 interface EntregaService {
 
-    @GET("get_entrega/{entrega_id}")
+    @GET("select_entrega/{entrega_id}")
     suspend fun getEntregaById(@Path("entrega_id") id: Int): Response<List<Entrega>>
 
     @GET("delete_entrega/{entrega_id}")
     suspend fun deleteEntregaById(@Path("entrega_id") id: Int): Response<Entrega>
 
-    @GET("get_entrega")
+    @GET("select_entrega")
     suspend fun getEntregas(): List<Entrega>
 
     @Multipart
-    @POST("create_entrega")
+    @POST("add_entrega")
     suspend fun createEntrega(
         @Part("data_entrega") data_entrega: RequestBody,
         @Part("funcionario_id") funcionario_id: RequestBody,

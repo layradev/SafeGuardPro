@@ -52,7 +52,7 @@ class ListaEpiFragment : Fragment() {
             epiBundle.putInt("epiId", epi.id)
             arguments = epiBundle
 
-            findNavController().navigate(R.id.epiFragment, arguments)
+            findNavController().navigate(R.id.cadastroEpiFragment, arguments)
 //            TODO Melhorar a tela de detalhes para trocar de tela ou deixar apenas na tela de cadastro
 //            if (Login.userAdmin) {
 //                findNavController().navigate(R.id.epiFragment, arguments)
@@ -73,7 +73,7 @@ class ListaEpiFragment : Fragment() {
 
         // Navegar para a tela de cadastro de pessoa
         binding.btnAdd.setOnClickListener {
-            findNavController().navigate(R.id.epiFragment)
+            findNavController().navigate(R.id.cadastroEpiFragment)
         }
 
         viewModel.epi.observe(viewLifecycleOwner) { epi ->

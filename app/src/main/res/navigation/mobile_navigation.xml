@@ -50,15 +50,7 @@
         android:name="com.happyhour.safeguardpro.view.ListaEpiFragment"
         android:label="fragment_lista_epi"
         tools:layout="@layout/fragment_lista_epi" />
-    <fragment
-        android:id="@+id/cadastroFuncionarioFragment"
-        android:name="com.happyhour.safeguardpro.view.CadastroFuncionarioFragment"
-        android:label="CadastroFuncionarioFragment"
-        tools:layout="@layout/fragment_cadastro_funcionario"/>
-    <fragment
-        android:id="@+id/epiFragment"
-        android:name="com.happyhour.safeguardpro.view.EpiFragment"
-        android:label="EpiFragment" />
+
     <fragment
         android:id="@+id/funcionarioFragment"
         android:name="com.happyhour.safeguardpro.view.FuncionarioFragment"

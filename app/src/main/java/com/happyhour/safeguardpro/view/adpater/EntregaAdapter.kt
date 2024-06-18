@@ -15,9 +15,9 @@ class EntregaAdapter(entregas: List<Entrega>?, private val clickListListener: (E
     class EntregaViewHolder(private val binding: ListItemEntregaBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(entrega: Entrega, clickListListener: (Entrega) -> Unit) {
-//                binding.tvDataEntrega.text = entrega.data_entrega
-//                binding.tvFuncionarioId.text = entrega.funcionario_id.toString()
-//                binding.tvEpiId.text = entrega.epi_id
+                binding.tvDataEntrega.text = entrega.data_entrega
+                binding.tvFuncionarioId.text = entrega.funcionario_id.toString()
+                binding.tvEpiId.text = entrega.epi_id.toString()
 
 
             binding.root.setOnClickListener {

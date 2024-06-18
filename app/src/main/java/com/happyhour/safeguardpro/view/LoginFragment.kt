@@ -40,7 +40,7 @@ class LoginFragment : Fragment() {
             if ((cpf.isBlank() || cpf.isEmpty()) || (senha.isBlank() || senha.isEmpty())) {
                 Toast.makeText(requireContext(), "Preencha os campos", Toast.LENGTH_LONG).show()
             } else {
-                viewModelFuncionario.getFuncionario(cpf.toInt())
+                viewModelFuncionario.getFuncionarioByCpf(cpf)
             }
         }
 

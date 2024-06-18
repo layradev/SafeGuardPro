@@ -60,7 +60,7 @@ class ListaEntregasFragment : Fragment() {
 
         // Navegar para a tela de cadastro de pessoa
         binding.btnAdd.setOnClickListener {
-            findNavController().navigate(R.id.cadastroFuncionarioFragment)
+            findNavController().navigate(R.id.funcionarioFragment)
         }
 
         viewModel.erro.observe(viewLifecycleOwner) {

@@ -16,7 +16,7 @@ interface FuncionarioService {
     @GET("select_funcionarios/{funcionarios_id}")
     suspend fun getFuncionarioById(@Path("funcionario_id") id: Int): Response<List<Funcionario>>
 
-    @GET("select_funcionario/{funcionario_cpf}")
+    @GET("select_funcionariocpf/{funcionario_cpf}")
     suspend fun getFuncionarioByCpf(@Path("funcionario_cpf") cpf: String): Response<List<Funcionario>>
 
     @GET("select_funcionario")

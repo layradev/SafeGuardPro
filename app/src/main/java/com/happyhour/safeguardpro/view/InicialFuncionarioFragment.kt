@@ -28,7 +28,7 @@ class InicialFuncionarioFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.btnFuncionario.setOnClickListener {
-            findNavController().navigate(R.id.cadastroFuncionarioFragment)
+            findNavController().navigate(R.id.funcionarioFragment)
         }
 
         binding.btnEpis.setOnClickListener {
